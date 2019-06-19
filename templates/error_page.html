@@ -1,0 +1,24 @@
+<!doctype html>
+<head>
+    <title>result page</title>
+</head>
+<body bgcolor="#CCFFCC">
+<h2><a href="/" id="title">2019 Film Search</a></h2>
+
+<form action="/results/1" name="search" method="post">
+    <span>Query:</span>
+    <input type="text" name="query" size=30 value="{{ orig_query1 }}">
+    <span>Director:</span>
+    <input type="text" name="director" size=30 value="{{ orig_query2 }}">
+    <span>Starring:</span>
+    <input type="text" name="starring" size=30 value="{{ orig_query3 }}">
+    <span>Location:</span>
+    <input type="text" name="location" size=30 value="{{ orig_query4 }}">
+    <input type="submit" value="Search">
+</form>
+
+<h3>Search Results:</h3>
+<h5>Total hits: 0<br></h5>
+<h5>Unknown words: {{ unknown_terms }}</h5>
+
+</body>
